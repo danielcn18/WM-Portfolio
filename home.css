@@ -1,45 +1,60 @@
 :root{
     --backgroundColor: rgb(48, 48, 53);
-    --navBackgroundColor: rgb(103, 96, 96);
+    --navBackgroundColor: black /* rgb(103, 96, 96); */
     --navBackgroundColorGradient: linear-gradient(to bottom right, var(--navBackgroundColor), var(--navBackgroundColor), var(--navBackgroundColor), yellow);
     --navColor: white;
     --htmlFontFamily: 'Times New Roman', Times, serif;
 }
 *{
     padding: 0;
-    margin: 0;
-}
+    margin: 0; }
 body{
     background-color: var(--backgroundColor);
-}
+    font-family: var(--htmlFontFamily);
+    font-family: "Rubik", sans-serif; }
 .nav-top{
     height: 10vh;
     width: 100%;
     background-color: var(--navBackgroundColor);
-    background-image: var(--navBackgroundColorGradient);
+    /* background-image: var(--navBackgroundColorGradient); */
     display: flex;
-    justify-content: center;
-}
-.nav-top>.nav{
+    justify-content: center; }
+.nav-top > .nav{
     height: 100%;
     width: 65%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-size: 27px;
-}
-.nav-top>.nav>a{
+    font-size: 1.8rem; }
+.nav-top > .nav > a{
     text-decoration: none;
-    color: var(--navColor);
-}
+    color: var(--navColor); }
 .name-area{
     height: 45vh;
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: white;
-}
-.name-area>.name-content{
-    font-size: 55px;
-}
+    align-items: center; }
+.name-content{
+    width: auto; }
+.line > p{
+    font-size: 3.7rem;
+    color: white;
+    margin: 0rem; }
+.line{
+    display: flex;
+    justify-content: space-between; }
+.word{
+    padding: 0 1rem; }
+/* .fancy:hover{
+    opacity: 0.8;} 
+.name-content:has(.fancy:hover) .word:not(.fancy:hover){
+    opacity: 0.4; } */
+.fancy > .letter{
+    display: inline-block; 
+    transition: transform 350ms ease; }
+.fancy:hover > .letter{
+    transition-duration: 800ms; }
+.fancy:hover > .letter:nth-child(1){
+    transform: translate(-80%, 60%) rotate(8deg);
+    opacity: 0;}
