@@ -1,6 +1,7 @@
 :root{
     --backgroundColor: rgb(48, 48, 53);
     --navBackgroundColor: rgb(103, 96, 96);
+    --navBackgroundColorGradient: linear-gradient(to bottom right, var(--navBackgroundColor), var(--navBackgroundColor), var(--navBackgroundColor), yellow);
     --navColor: white;
     --htmlFontFamily: 'Times New Roman', Times, serif;
 }
@@ -15,10 +16,11 @@ body{
     height: 10vh;
     width: 100%;
     background-color: var(--navBackgroundColor);
+    background-image: var(--navBackgroundColorGradient);
     display: flex;
     justify-content: center;
 }
-.nav{
+.nav-top>.nav{
     height: 100%;
     width: 65%;
     display: flex;
@@ -26,10 +28,18 @@ body{
     align-items: center;
     font-size: 27px;
 }
-.nav>a{
+.nav-top>.nav>a{
     text-decoration: none;
     color: var(--navColor);
 }
-.name{
-    
+.name-area{
+    height: 45vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.name-area>.name-content{
+    font-size: 55px;
 }
