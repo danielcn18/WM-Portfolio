@@ -1,0 +1,35 @@
+:root{
+    --backgroundColor: rgb(48, 48, 53);
+    --navBackgroundColor: rgb(103, 96, 96);
+    --navColor: white;
+    --htmlFontFamily: 'Times New Roman', Times, serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: var(--backgroundColor);
+}
+.nav-top{
+    height: 10vh;
+    width: 100%;
+    background-color: var(--navBackgroundColor);
+    display: flex;
+    justify-content: center;
+}
+.nav{
+    height: 100%;
+    width: 65%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 27px;
+}
+.nav>a{
+    text-decoration: none;
+    color: var(--navColor);
+}
+.name{
+    
+}
