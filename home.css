@@ -1,22 +1,24 @@
 :root{
-    --primaryColor: /* #a84466; */ /* #c7ccd2 */ #d5d5d5;
+    --primaryColor: #d5d5d5;
     --secondaryColor: #51749b;
-    --tertiaryColor: white;
     --textPrimary: white;
     --textSecondary: grey;
     --textTertiary: #2e81e1;
-    /* --backgroundColor: */ /* rgb(48, 48, 53) */ /* #f57923 */ /* #a84466; */
-    /* --navBackgroundColorGradient: linear-gradient(to top , rgb(48, 48, 53), rgb(48, 48, 53), rgb(87, 87, 87)); */
-    /* --navBackgroundColor: */ /* #280526; */ /* #d5d5d5; */
-    --htmlFontFamily: 'Times New Roman', Times, serif;
+    --navText: 2.1rem; 
+    --titleText: 3.8rem;
+    --subTitleText: 2.6rem;
+    --htmlFontFamily: "Rubik", sans-serif;;
 }
 *{
     padding: 0;
     margin: 0; }
-body{
+html{
+    height: 100%;
+    width: 100%;
     background-color: var(--primaryColor);
-    font-family: var(--htmlFontFamily);
-    font-family: "Rubik", sans-serif; }
+}
+body{
+    font-family: var(--htmlFontFamily); }
 .nav-top{
     height: 10vh;
     width: 100%;
@@ -29,7 +31,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-size: 2.1rem; }
+    font-size: var(--navText) }
 .nav-top > .nav > a{
     position: relative;
     text-decoration: none;
@@ -53,7 +55,7 @@ body{
 .nav:has(a:hover) a:not(a:hover){
     opacity: 0.2; }
 .active{
-    transition: opacity 1100ms ease; }
+    transition: opacity 900ms ease; }
 .name-area{
     height: 40vh;
     width: 100%;
@@ -63,10 +65,10 @@ body{
 .name-content{
     width: auto; }
 .line > p{
-    font-size: 3.8rem;
     color: var(--textPrimary);
     text-shadow: 2px 2px var(--textSecondary);
-    margin: 0rem; }
+    margin: 0rem; 
+    padding: 0 1rem; }
 .letter{
     color: var(--textTertiary);
     text-shadow: none;
@@ -74,8 +76,13 @@ body{
 .line{
     display: flex;
     justify-content: space-between; }
-.word{
-    padding: 0 1rem; }
+.word:not(.sub-intro){
+    font-size: var(--titleText); }
+.fancy{
+    z-index: 2; }
+.sub-intro{
+    z-index: 1;
+    font-size: var(--subTitleText); }
 .fancy > .letter{
     display: inline-block; 
     transition: transform 350ms ease; }
