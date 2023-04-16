@@ -52,14 +52,8 @@ body{
     border-radius: 10px; }      
 .nav:has(a:hover) a:not(a:hover){
     opacity: 0.2; }
-
-/* .line > p:hover{
-    opacity: 0.4; } */
-/* .name-content:not(.intro):hover p:not(.fancy){
-    opacity: 0.6; } */
-/* .name-content>.glam:hover .name-content>.intro>p:not(.glam>p){
-    opacity: 0.1; } */
-
+.active{
+    transition: opacity 1100ms ease; }
 .name-area{
     height: 40vh;
     width: 100%;
