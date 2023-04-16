@@ -1,10 +1,10 @@
 :root{
-    --primaryColor: /* #a84466; */ #c7ccd2;
+    --primaryColor: /* #a84466; */ /* #c7ccd2 */ #d5d5d5;
     --secondaryColor: #51749b;
     --tertiaryColor: white;
     --textPrimary: white;
     --textSecondary: grey;
-    --textTertiary: #80a9d8;
+    --textTertiary: #2e81e1;
     /* --backgroundColor: */ /* rgb(48, 48, 53) */ /* #f57923 */ /* #a84466; */
     /* --navBackgroundColorGradient: linear-gradient(to top , rgb(48, 48, 53), rgb(48, 48, 53), rgb(87, 87, 87)); */
     /* --navBackgroundColor: */ /* #280526; */ /* #d5d5d5; */
@@ -52,6 +52,14 @@ body{
     border-radius: 10px; }      
 .nav:has(a:hover) a:not(a:hover){
     opacity: 0.2; }
+
+/* .line > p:hover{
+    opacity: 0.4; } */
+/* .name-content:not(.intro):hover p:not(.fancy){
+    opacity: 0.6; } */
+/* .name-content>.glam:hover .name-content>.intro>p:not(.glam>p){
+    opacity: 0.1; } */
+
 .name-area{
     height: 40vh;
     width: 100%;
@@ -63,23 +71,12 @@ body{
 .line > p{
     font-size: 3.8rem;
     color: var(--textPrimary);
-    text-shadow: 1px 1px var(--textSecondary);
+    text-shadow: 2px 2px var(--textSecondary);
     margin: 0rem; }
-/* .intro{
-    opacity: 0.4; } */
-/* .line:has(a:hover) a:not(a:hover){
-    opacity: 0.2; } */
-/* .fancy:hover intro{
-    opacity: 0.2; } */
-/* .fancy:hover > .intro{
-    opacity: 0.3; } */
-/* .line:hover:not(:first-child) */	
-/* .name-content:hover p:not(.fancy){
-    opacity: 0.3; } */
-
 .letter{
     color: var(--textTertiary);
-    text-shadow: none; }
+    text-shadow: none;
+    font-weight: bold; }
 .line{
     display: flex;
     justify-content: space-between; }

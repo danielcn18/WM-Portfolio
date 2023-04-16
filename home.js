@@ -18,3 +18,15 @@ const enhanced = id => {
 }
 enhanced("channel-link1");
 enhanced("channel-link2");
+
+/* document.getElementsByClassName("fancy").addEventListener("mouseover", fadeIn); */
+/* var f = document.querySelectorAll(".fancy");
+for(let i = 0; i < f.length; i++){
+    f[i].addEventListener("mouseover", fadeIn(i));
+}
+ */
+function fadeIn(i){
+    /* var glam = document.querySelectorAll(".intro");
+    glam.style.color = "red"; */
+    console.log(i);
+}
