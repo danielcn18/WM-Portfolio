@@ -152,8 +152,37 @@ body{
     opacity: 0.7;
     text-align: center;
     border: 1rem solid white; }
-.works-title{
-    background-color: rgb(214, 214, 214);
+
+.works-contain{
+    background-color: rgb(58, 67, 121);
     height: 100vh;
+    width: 100%; }
+
+.contact-contain{
+    background-color: rgb(58, 67, 121);
+    height: 100vh;
+    width: 100%; }
+
+#footer{
+    height: 22vh;
     width: 100%;
-}
+    background-color: #384762;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 0.7; 
+    font-size: 1.7rem;
+    font-family: Arial, Helvetica, sans-serif }
+#foot{
+    height: auto;
+    width: 100%;
+    display: block; }
+#socials{
+    color: white; 
+    margin-top: 1vh;}
+#socials>a{
+    text-decoration: none; }
+#socials>a>i{
+    color: white; }
