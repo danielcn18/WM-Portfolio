@@ -11,7 +11,8 @@
     --subTitleText: 3.3rem;
     --postTitleText: 1.5rem;
     --htmlFontFamily: "Rubik", sans-serif; 
-    --inbetween-gaps: 9vh; }
+    --inbetween-gaps: 9vh;
+    --swiper-theme-color: white; }
 * {
     padding: 0;
     margin: 0; }
@@ -170,18 +171,18 @@ body{
     text-align: center; }
 
 #works-title{
-    padding-top: 1.4vh;
+    padding-top: 2.9vh;
     margin: 0;
     width: 100%;
-    font-size: 2.7rem;
+    font-size: 2.5rem;
     color: white;
     text-shadow: 1px 1px var(--textSecondary); }
 
 .swiper {
-    margin-top: 5vh;
-    width: 90%;
+    margin-top: 2.5vh;
+    width: 85%;
     height: 100%;
-    padding-bottom: 5vh;
+    padding-bottom: 1vh;
 }
 
 .swiper-slide {
@@ -209,13 +210,22 @@ body{
     margin-top: 5vh;
 }
 
+.swiper-button-next, .swiper-button-prev{
+    color: rgb(37, 111, 140);
+}
+.swiper-pagination-bullet-active {
+    /* opacity: var(--swiper-pagination-bullet-opacity, 1); */
+    background: rgb(37, 111, 140);
+}
+
 .work-grid{
     display: grid;
     grid-template-columns: 1fr;
+    /* grid-template-rows: 26vh 26vh 26vh 1.4vh; */
     grid-auto-rows: 26vh;
     height: auto;
     /* margin-top: 2vh; */
-    grid-row-gap: 2rem;
+    grid-row-gap: 1.8rem;
     justify-items: center; }
 
 .work-grid>.box{
