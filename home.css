@@ -24,8 +24,8 @@ html::-webkit-scrollbar{
     display: none; }
 body{
     font-family: var(--htmlFontFamily); }
+    
 #main-image{
-    background-image: url(/Images/background1.2.jpg);
     background-position-x: center;
     position: absolute;
     height: 100vh;
