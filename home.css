@@ -162,14 +162,12 @@ body{
     opacity: 0.7;
     text-align: center;
     border: 1rem solid white; }
-
 .works-contain{
     height: auto;
     min-height: 100vh;
     margin: 0 5% 8vh 5%;
     width: 90%; 
     text-align: center; }
-
 #works-title{
     padding-top: 2.9vh;
     margin: 0;
@@ -177,66 +175,41 @@ body{
     font-size: 2.5rem;
     color: white;
     text-shadow: 1px 1px var(--textSecondary); }
-
 .swiper {
     margin-top: 2.5vh;
     width: 85%;
     height: 100%;
-    padding-bottom: 1vh;
-}
-
+    padding-bottom: 1vh; }
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    /* background: #fff; */
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-
+    align-items: center; }
 .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-}
-
+    object-fit: cover; }
 .swiper {
     margin-left: auto;
-    margin-right: auto;
-}
-
+    margin-right: auto; }
 .swiper-pagination{
-    margin-top: 5vh;
-}
-
-.swiper-button-next, .swiper-button-prev{
-    color: rgb(37, 111, 140);
-}
-.swiper-pagination-bullet-active {
-    /* opacity: var(--swiper-pagination-bullet-opacity, 1); */
-    background: rgb(37, 111, 140);
-}
-
+    margin-top: 10vh; }
 .work-grid{
     display: grid;
     grid-template-columns: 1fr;
-    /* grid-template-rows: 26vh 26vh 26vh 1.4vh; */
+    grid-template-rows: 26vh 26vh 26vh 1.4vh;
     grid-auto-rows: 26vh;
     height: auto;
-    /* margin-top: 2vh; */
     grid-row-gap: 1.8rem;
     justify-items: center; }
-
 .work-grid>.box{
     height: 100%;
     width: 75%;
     border-radius: 1.9rem;
     background-color: rgb(52, 52, 52);
     background-image: linear-gradient(to top right, rgb(57, 57, 57), rgb(52, 52, 52), rgb(57, 57, 57)); }
-
-
-
 .contact-contain{
     background-color: rgb(58, 67, 121);
     height: 100vh;
@@ -263,5 +236,3 @@ body{
     text-decoration: none; }
 #socials>a>i{
     color: white; }
-    
-
