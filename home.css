@@ -219,6 +219,13 @@ body{
     border-radius: 1.9rem;
     background-color: rgb(52, 52, 52);
     background-image: linear-gradient(to top right, rgb(57, 57, 57), rgb(52, 52, 52), rgb(57, 57, 57)); }
+
+.box>a{
+    display: block;
+
+}
+
+
 .contact-contain-outer{
     height: 55vh;
     width: 100%;
