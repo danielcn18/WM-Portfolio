@@ -260,9 +260,12 @@ body{
 .work-grid>.box{
     height: 100%;
     width: 75%;
-    border-radius: 1.9rem;
+    /* border-radius: 1.9rem;
     background-color: rgb(52, 52, 52);
-    background-image: linear-gradient(to top right, rgb(57, 57, 57), rgb(52, 52, 52), rgb(57, 57, 57)); 
+    background-image: linear-gradient(to top right, rgb(57, 57, 57), rgb(52, 52, 52), rgb(57, 57, 57)); */ 
+}
+.box>img{
+    border-radius: 1.9rem;
 }
 .box>a{
     display: block;
