@@ -197,7 +197,6 @@ body{
 }
 #w-section{
     height: auto;
-    min-height: 21vh;
     width: 75%;
     margin: 6vh 0;
     border-radius: 1px;
