@@ -208,8 +208,7 @@ body{
 }
 .works-contain{
     height: auto;
-    min-height: 100vh;
-    margin: 0 5% 0 5%;
+    margin: 0 5%;
     width: 90%; 
     text-align: center; 
 }
@@ -221,7 +220,49 @@ body{
     color: white;
     text-shadow: 1.5px 1.5px var(--textSecondary); 
 }
-.swiper {
+
+.project-text-semester {
+    padding-top: 2.9vh;
+    margin: 0;
+    width: 100%;
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 1.5px 1.5px var(--textSecondary); 
+}
+
+.projects-main {
+    margin: 3vh 0;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.projects-main > a {
+    text-decoration: none;
+}
+
+.project-i {
+    height: 320px;
+    width: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: rgb(111, 111, 111);
+    background: linear-gradient(0.4turn, rgb(111, 111, 111), rgb(137, 137, 137), rgb(137, 137, 137), rgb(118, 118, 118));
+}
+
+.project-i-title {
+    font-size: 2rem;
+    color: white;
+}
+
+
+
+/* .swiper {
     margin-top: 2.5vh;
     width: 85%;
     height: 100%;
@@ -246,7 +287,10 @@ body{
 }
 .swiper-pagination{
     margin-top: 10vh; 
-}
+} */
+
+
+
 .work-grid{
     display: grid;
     grid-template-columns: 1fr;
