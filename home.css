@@ -1,3 +1,25 @@
+.description-outer {
+    width: 100%;
+    height: auto; 
+    box-sizing: border-box;
+    padding: 0 20%;
+    display: flex;
+    margin-top: 1rem;
+}
+.description {
+    height: auto;
+    width: 100%;
+    background-color: rgb(220, 220, 220);;
+    border: 0.75rem solid rgb(179, 179, 179);
+    box-sizing: border-box;
+}
+.description > p {
+    padding: 1rem;
+    font-size: 1.4rem;
+    color: black;
+    
+}
+
 :root{
     --match1: #ffbc14;
     --match2: #0fc8ff;
@@ -42,7 +64,9 @@ body{
 }
 .section{
     min-height: 100vh;
-    width: 100%; 
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
 }
 .auto-section{
     min-height: auto;
